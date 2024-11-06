@@ -4,7 +4,7 @@ close all; clear all; clc
 %data size = [no of readout, no of spiral arms, time frame]
 %trajectory is normalized within [-0.5 0.5]
 
-data=load('...\k-space traj.mat'); % enter filepath
+data=load('.\k-space traj.mat'); %filepath
 k_space_traj = data.traj; 
 
 %recon matrix size
@@ -15,4 +15,4 @@ gDCF = gDCF_new(k_space_traj,N);
 
 %Plot DCF for one spiral arm in timeframe #1
 figure;
-plot(gDCF(:,1,1), 'r','LineWidth',2,'DisplayName', 'gDCF-ext')
+plot(gDCF(:,1,1), 'r','LineWidth',2,'DisplayName', 'gDCF-new')
