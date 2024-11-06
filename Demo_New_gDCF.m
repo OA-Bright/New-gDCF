@@ -11,7 +11,7 @@ k_space_traj = data.traj;
 N = 128;
 
 %compute DCF
-gDCF = Simplified_gDCF(k_space_traj,N);
+gDCF = gDCF_new(k_space_traj,N);
 
 %Plot DCF for one spiral arm in timeframe #1
 figure;
