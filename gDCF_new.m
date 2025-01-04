@@ -16,7 +16,7 @@ DCF_time = zeros(size(k));
 % lengths = linspace(0, mat, (mat/2) + 1); 
 % widths = linspace(0, mat, (mat/2) + 1);
 
-%for center out readout e.g spiral
+% use for center out readout e.g spiral as in demo .mat file
 lengths = linspace(0, mat, mat); 
 widths = linspace(0, mat, mat); 
 [~, del_k] = LBD(k * mat, lengths, widths);
