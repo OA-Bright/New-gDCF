@@ -12,8 +12,13 @@ Ns = size(k, 1);
 Nproj = size(k, 2);
 DCF_time = zeros(size(k));
 %% lower Beruling Density Calculation
-lengths = linspace(0, mat, (mat/2) + 1); 
-widths = linspace(0, mat, (mat/2) + 1); 
+% uncomment for symetric readout about the center e.g radial projection acquisition
+% lengths = linspace(0, mat, (mat/2) + 1); 
+% widths = linspace(0, mat, (mat/2) + 1);
+
+%for center out readout e.g spiral
+lengths = linspace(0, mat, mat); 
+widths = linspace(0, mat, mat); 
 [~, del_k] = LBD(k * mat, lengths, widths);
 %%
 UnitDistance = del_k / mat;
