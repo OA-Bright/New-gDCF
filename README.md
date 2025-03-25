@@ -1,2 +1,2 @@
-# Geometrically-derived Density Compensation Function for Non-Cartesian k-space Sampling Trajectories in MRI
+# Geometrically-derived Density Compensation Function for arbitrary 2D and 3D Non-Cartesian MRI Reconstruction
 Reference: 
