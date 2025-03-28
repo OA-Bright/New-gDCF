@@ -49,7 +49,7 @@ for ii=1:Nt
                 % Only keep positive distances
                 calc_dist(calc_dist < 0) = 0;
                 % Sum the contributions for this point
-                gDCF(Selected_Meas) = 1./ sum(calc_dist); 
+                gDCF(Selected_Meas) = 1./ sum(calc_dist.^2); 
             else
                 gDCF(Selected_Meas) = 0;  % Handle the case where no valid points were found
             end
